@@ -1,0 +1,244 @@
+{
+  "_nota": "Catálogo armado el 2026-10-05 con lo publicado en @biotech_supplies (publicaciones y destacadas). Precios desconocidos: null hasta que Lucía los pase. 'confirmar': true = solo aparece en destacadas viejas (2 a 3 años); falta confirmar que se sigue vendiendo.",
+  "marca": {
+    "nombre": "Biotech Supplies",
+    "lema": "Por científicos, para científicos",
+    "bio": "Venta de accesorios Biotech. Por científicos para científicos. Envíos a todo el país. Montevideo, Uruguay.",
+    "instagram": "biotech_supplies",
+    "instagram_url": "https://www.instagram.com/biotech_supplies/",
+    "mensaje_url": "https://ig.me/m/biotech_supplies",
+    "ciudad": "Montevideo, Uruguay",
+    "moneda": "UYU"
+  },
+  "envios_y_pagos": {
+    "envios": [
+      "Envíos propios y súper puntuales.",
+      "Envío gratis en la zona verde de Montevideo (la del mapa de la historia «Envíos y Pago»; el listado de barrios está por confirmar).",
+      "Al resto de Montevideo, por DAC: el envío se paga al recibir el paquete.",
+      "Al interior, por la agencia que prefieras.",
+      "Se pueden coordinar lugares de entrega.",
+      "Por el momento no hay punto de retiro."
+    ],
+    "pagos": [
+      "Preferentemente por transferencia bancaria.",
+      "Si no, giro o link de Mercado Pago (con 10 % de recargo)."
+    ],
+    "promo": {
+      "texto": "En compras mayores a $600, la Taza Mundialista va de regalo.",
+      "vigente": "a confirmar: es del último reel (vuelta de la marca, época del Mundial 2026). No mostrarla como vigente sin el OK de Lucía."
+    }
+  },
+  "tazas_comun": "Tazas de vidrio transparente con ilustraciones científicas. Son «mágicas»: con café negro los dibujos se esconden y, cuando le agregás leche, aparecen todos los detalles.",
+  "categorias": [
+    { "id": "tazas", "nombre": "Tazas científicas", "resumen": "Tazas de vidrio «mágicas», una para cada ciencia. También personalizadas." },
+    { "id": "bitacoras", "nombre": "Bitácoras", "resumen": "Bitácoras de laboratorio con 100 hojas cuadriculadas." },
+    { "id": "canguros", "nombre": "Canguros", "resumen": "Canguros oversize «In my scientific era»." },
+    { "id": "totes", "nombre": "Totes", "resumen": "Tote bags que hacen juego con los canguros." },
+    { "id": "cartucheras", "nombre": "Cartucheras", "resumen": "Cartucheras con científicas y científicos." },
+    { "id": "accesorios", "nombre": "Accesorios", "resumen": "Mousepads, llaveros, pins, posavasos, stickers y esculturas 3D." }
+  ],
+  "productos": [
+    {
+      "id": "taza-biotech", "nombre": "Taza Biotecnológica", "categoria": "tazas",
+      "resumen": "La favorita y la elegida de muchos: la Biotech, para los amigos.",
+      "descripcion": "Doble hélice de ADN, mitocondrias, cultivos, matraces y la bitácora: toda la biotecnología en una taza.",
+      "etiquetas": ["La favorita"], "destacado": true, "precio": null,
+      "fotos": ["fotos/taza-biotech.jpg"], "fuente": "https://www.instagram.com/reel/DKPTB8ngHpd/"
+    },
+    {
+      "id": "taza-quimica", "nombre": "Taza Química", "categoria": "tazas",
+      "resumen": "Una de las más pedidas.",
+      "descripcion": "Para las y los que viven entre reactivos y fórmulas.",
+      "etiquetas": ["Más pedida"], "destacado": true, "precio": null,
+      "fotos": ["fotos/taza-quimica.jpg"], "fuente": "https://www.instagram.com/reel/DLxXKZaMyVT/"
+    },
+    {
+      "id": "taza-organica", "nombre": "Taza Moléculas Orgánicas", "categoria": "tazas",
+      "resumen": "¿Quién dijo que la Química Orgánica no era bella?",
+      "descripcion": "Moléculas orgánicas dibujadas a mano. Si tenés tus moléculas favoritas, las ponemos en tu taza.",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-organica.jpg"], "fuente": "https://www.instagram.com/reel/DLpqKnuswm1/"
+    },
+    {
+      "id": "taza-medicina", "nombre": "Taza Medicina", "categoria": "tazas",
+      "resumen": "La de Medicina no podía faltar. Diseño renovado.",
+      "descripcion": "Ilustraciones de medicina para el desayuno antes de la guardia.",
+      "etiquetas": ["Diseño nuevo"], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-medicina.jpg"], "fuente": "https://www.instagram.com/reel/DMs_iQmpEkV/"
+    },
+    {
+      "id": "taza-programacion", "nombre": "Taza Programación", "categoria": "tazas",
+      "resumen": "Para los amantes del código.",
+      "descripcion": "Para acompañar el café mientras compila.",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-programacion.jpg"], "fuente": "https://www.instagram.com/reel/DMqEG4_sza5/"
+    },
+    {
+      "id": "taza-fisica", "nombre": "Taza Física", "categoria": "tazas",
+      "resumen": "Amantes de la Física: esta es su taza.",
+      "descripcion": "Átomos, ecuaciones y diagramas para empezar el día con energía.",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-fisica.jpg"], "fuente": "https://www.instagram.com/reel/DLVqo-VyDlb/"
+    },
+    {
+      "id": "taza-matematica", "nombre": "Taza Matemática", "categoria": "tazas",
+      "resumen": "La favorita de muchos, para los que aman calcular.",
+      "descripcion": "Fórmulas y gráficos dibujados a mano.",
+      "etiquetas": [], "destacado": true, "precio": null,
+      "fotos": ["fotos/taza-matematica.jpg"], "fuente": "https://www.instagram.com/reel/DLPv_8OMnPm/"
+    },
+    {
+      "id": "taza-cosmica", "nombre": "Taza Cósmica", "categoria": "tazas",
+      "resumen": "Verdaderamente mágica.",
+      "descripcion": "Planetas, telescopios y constelaciones.",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-cosmica.jpg"], "fuente": "https://www.instagram.com/reel/DLYRk8qpELK/"
+    },
+    {
+      "id": "taza-microbiologia", "nombre": "Taza Mundo Bacteriano", "categoria": "tazas",
+      "resumen": "Para los amantes de la microbiología.",
+      "descripcion": "El mundo bacteriano, en tu taza.",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-microbiologia.jpg"], "fuente": "https://www.instagram.com/reel/DKZgGK-s6O3/"
+    },
+    {
+      "id": "taza-veterinaria", "nombre": "Taza Ciencias Veterinarias", "categoria": "tazas",
+      "resumen": "Para los amantes de los animalitos.",
+      "descripcion": "Perros, gatos, tortugas, peces, vacas, loros, hámsters y conejos.",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-veterinaria.jpg"], "fuente": "https://www.instagram.com/reel/DJ27OpPIL3F/"
+    },
+    {
+      "id": "taza-jurasica", "nombre": "Taza Jurásica", "categoria": "tazas",
+      "resumen": "Para los amantes de la Paleontología y los dinosaurios.",
+      "descripcion": "¿Cuál es tu dinosaurio favorito?",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-jurasica.jpg"], "fuente": "https://www.instagram.com/reel/DJoomEkAQHZ/"
+    },
+    {
+      "id": "taza-oceanica", "nombre": "Taza Oceánica", "categoria": "tazas",
+      "resumen": "Ideal para biólogos marinos y amantes del mundo subacuático.",
+      "descripcion": "Ballenas, peces y vida marina.",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-oceanica.jpg"], "fuente": "https://www.instagram.com/reel/DJjuY7fAJ5d/"
+    },
+    {
+      "id": "taza-mundialista", "nombre": "Taza Mundialista", "categoria": "tazas",
+      "resumen": "Edición celeste: Uruguay nomá.",
+      "descripcion": "El sol, el escudo, 1928 y «los de afuera son de palo», en una taza para alentar.",
+      "etiquetas": ["Edición especial"], "destacado": false, "precio": null,
+      "fotos": ["fotos/taza-mundialista.jpg"], "fuente": "https://www.instagram.com/reel/DZoWPlGN5qL/"
+    },
+    {
+      "id": "taza-personalizada", "nombre": "Taza personalizada", "categoria": "tazas",
+      "resumen": "Diseñamos tu taza juntos.",
+      "descripcion": "Tu proteína favorita, un chiste de laboratorio, el logo de tu grupo de investigación o esa frase que te motiva cada mañana. Ideal para regalar o darte un gustito científico.",
+      "etiquetas": ["Personalizable"], "destacado": true, "precio": null,
+      "fotos": ["fotos/tazas-personalizadas.jpg"], "fuente": "https://www.instagram.com/p/DMqgvK9S5dh/"
+    },
+    {
+      "id": "bitacora", "nombre": "Bitácora de laboratorio", "categoria": "bitacoras",
+      "resumen": "100 hojas cuadriculadas para el diseño de tus experimentos.",
+      "descripcion": "Tapas ilustradas con laboratorios. Además de las 100 hojas cuadriculadas, trae otras cositas para el trabajo en el laboratorio.",
+      "variantes": ["Laboratorio de Proteínas", "Laboratorio de Biología Celular", "Laboratorio de Microbiología", "Laboratorio de Química (nuevo)"],
+      "etiquetas": ["Nuevo diseño"], "destacado": true, "precio": null,
+      "fotos": ["fotos/bitacoras.jpg"], "fuente": "https://www.instagram.com/p/DOmT5kOjUtw/"
+    },
+    {
+      "id": "canguro", "nombre": "Canguro oversize «In my scientific era»", "categoria": "canguros",
+      "resumen": "Amplio, afelpado por dentro y súper cómodo.",
+      "descripcion": "Estampa adelante, atrás y en el puño. Para el laboratorio, la facu o donde sea que te inspire la ciencia. Con el canguro, la tote va de regalo.",
+      "variantes": ["Chocolate con letras dorado pistacho", "Negro con letras gris perlado"],
+      "etiquetas": ["Tote de regalo"], "destacado": true, "precio": null,
+      "fotos": ["fotos/canguros-foto.jpg", "fotos/canguros-colores.jpg"], "fuente": "https://www.instagram.com/p/DM05cFTSmV7/"
+    },
+    {
+      "id": "tote", "nombre": "Tote bag «In my scientific era»", "categoria": "totes",
+      "resumen": "Hace juego con los canguros.",
+      "descripcion": "Estampa con tela gamuzada. Va de regalo con la compra de un canguro, o se puede comprar por separado.",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/tote.jpg"], "fuente": "https://www.instagram.com/reel/DNCMD9vM57r/"
+    },
+    {
+      "id": "cartuchera", "nombre": "Cartuchera científica", "categoria": "cartucheras",
+      "resumen": "Cada lado trae un set de 4 científicos diferentes.",
+      "descripcion": "Ilustraciones de científicas y científicos para llevar a todos lados.",
+      "etiquetas": [], "destacado": false, "precio": null,
+      "fotos": ["fotos/cartucheras.jpg"], "fuente": "https://www.instagram.com/p/DJM1Za2JGRP/"
+    },
+    {
+      "id": "mousepad", "nombre": "Mousepad científico", "categoria": "accesorios",
+      "resumen": "Fórmulas y dibujos en blanco sobre negro.",
+      "descripcion": "Para el escritorio del laboratorio o de casa.",
+      "etiquetas": [], "destacado": false, "precio": null, "confirmar": true,
+      "fotos": [], "fuente": "destacada «Mousepads»"
+    },
+    {
+      "id": "llavero", "nombre": "Llaveros científicos", "categoria": "accesorios",
+      "resumen": "Para que todos sepan que amás la ciencia.",
+      "descripcion": "Llaveros con diseños científicos.",
+      "etiquetas": [], "destacado": false, "precio": null, "confirmar": true,
+      "fotos": [], "fuente": "destacada «Llaveros»"
+    },
+    {
+      "id": "pin", "nombre": "Pins", "categoria": "accesorios",
+      "resumen": "Pins con diseños científicos.",
+      "descripcion": "Para la mochila, la túnica o la campera.",
+      "etiquetas": [], "destacado": false, "precio": null, "confirmar": true,
+      "fotos": [], "fuente": "destacada «Pins»"
+    },
+    {
+      "id": "posavasos", "nombre": "Posavasos", "categoria": "accesorios",
+      "resumen": "Los posavasos más nerd.",
+      "descripcion": "Patrones de fórmulas en blanco y negro.",
+      "etiquetas": [], "destacado": false, "precio": null, "confirmar": true,
+      "fotos": [], "fuente": "destacada «Posavasos»"
+    },
+    {
+      "id": "stickers", "nombre": "Stickers holográficos", "categoria": "accesorios",
+      "resumen": "Átomos y frases científicas que brillan.",
+      "descripcion": "Para la notebook, el termo o la bitácora.",
+      "etiquetas": [], "destacado": false, "precio": null, "confirmar": true,
+      "fotos": [], "fuente": "destacada «Stickers»"
+    },
+    {
+      "id": "escultura-adn", "nombre": "Esculturas 3D", "categoria": "accesorios",
+      "resumen": "La doble hélice de ADN, en tres dimensiones.",
+      "descripcion": "Esculturas para el escritorio, como la doble hélice de ADN sobre su base.",
+      "etiquetas": [], "destacado": false, "precio": null, "confirmar": true,
+      "fotos": [], "fuente": "destacada «Esculturas 3D»"
+    }
+  ],
+  "cientificos": [
+    {
+      "id": "kovalevskaya", "nombre": "Sofia Kovalévskaya", "pais": "Rusia", "nacimiento": "1850",
+      "bio": "Matemática, escritora y defensora de los derechos de las mujeres. Fue la primera mujer en obtener un doctorado en matemáticas y en ocupar una cátedra universitaria en Europa.",
+      "cita": "Es imposible ser matemático sin ser un poeta en el alma.",
+      "foto": "fotos/cientifica-kovalevskaya.jpg", "fuente": "https://www.instagram.com/p/DM014idy5rh/"
+    },
+    {
+      "id": "franklin", "nombre": "Rosalind Franklin", "pais": "Reino Unido", "nacimiento": "1920",
+      "bio": "Química y cristalógrafa. Sus imágenes de difracción de rayos X fueron clave para descubrir la estructura del ADN.",
+      "cita": "La ciencia y la vida cotidiana no pueden y no deben ser separadas.",
+      "foto": "fotos/cientifica-franklin.jpg", "fuente": "https://www.instagram.com/p/DLPuGtlsYC3/"
+    },
+    {
+      "id": "newton", "nombre": "Isaac Newton", "pais": "Reino Unido", "nacimiento": "1643",
+      "bio": "Físico, matemático y astrónomo. Formuló las leyes del movimiento y la ley de la gravitación universal.",
+      "cita": "Si he visto más lejos, es porque estoy sobre hombros de gigantes.",
+      "foto": "fotos/cientifico-newton.jpg", "fuente": "https://www.instagram.com/p/DKM6JDOAChQ/"
+    },
+    {
+      "id": "goodall", "nombre": "Jane Goodall", "pais": "Reino Unido", "nacimiento": "1934",
+      "bio": "Primatóloga. Su estudio de los chimpancés salvajes en Tanzania iba a durar 6 meses y sigue después de más de seis décadas.",
+      "cita": "Todo lo que hacemos marca la diferencia.",
+      "foto": "fotos/cientifica-goodall.jpg", "fuente": "https://www.instagram.com/p/DJcn9SXyYMn/"
+    },
+    {
+      "id": "galileo", "nombre": "Galileo Galilei", "pais": "Italia", "nacimiento": "1564",
+      "bio": "Astrónomo, físico e ingeniero, uno de los padres de la ciencia moderna. Con el telescopio observó las fases de Venus y las lunas de Júpiter.",
+      "cita": null,
+      "foto": "fotos/cientifico-galileo.jpg", "fuente": "https://www.instagram.com/p/DLhwuvjM17j/"
+    }
+  ]
+}

@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="es-UY">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biotech Supplies · Regalos científicos desde Montevideo</title>
+<meta name="description" content="Tazas mágicas, bitácoras de laboratorio, canguros y más. Regalos científicos por científicos, para científicos. Envíos a todo Uruguay. Pedí por Instagram.">
+<meta name="theme-color" content="#FBFAF6">
+<!-- Vista previa para Lucía: que los buscadores no la indexen -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<!-- Para compartir (Open Graph y Twitter) -->
+<meta property="og:site_name" content="Biotech Supplies">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_UY">
+<meta property="og:title" content="Biotech Supplies · Por científicos, para científicos">
+<meta property="og:description" content="Tazas que se vuelven mágicas con leche, bitácoras de laboratorio, canguros «In my scientific era» y más. Elegí en el catálogo y pedí por Instagram. 🧪">
+<meta property="og:url" content="https://mathiascosta12-sudo.github.io/biotech-supplies-borrador/">
+<meta property="og:image" content="https://mathiascosta12-sudo.github.io/biotech-supplies-borrador/fotos/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mano sosteniendo una taza de vidrio transparente con dibujos de biotecnología: ADN, mitocondrias y matraces, con hojas de monstera de fondo.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Biotech Supplies · Por científicos, para científicos">
+<meta name="twitter:description" content="Tazas que se vuelven mágicas con leche, bitácoras de laboratorio, canguros «In my scientific era» y más. Elegí en el catálogo y pedí por Instagram. 🧪">
+<meta name="twitter:image" content="https://mathiascosta12-sudo.github.io/biotech-supplies-borrador/fotos/og.jpg">
+<!-- Vista previa en GitHub Pages: si se publica en un dominio propio, cambiar og:url, og:image y twitter:image, y sacar el noindex. -->
+
+<!-- Primera línea de JavaScript: marca que hay JS (sin JS todo se ve igual, sin animaciones) -->
+<script>
+document.documentElement.classList.add('js');
+/* Red de seguridad: si por algún motivo el script principal no arranca, a los 4 s se muestra todo. */
+setTimeout(function () { if (!window.__bsListo) document.documentElement.classList.add('sin-reveal'); }, 4000);
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Patrick+Hand&family=Caveat+Brush&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&text=IN%20MY%20SCIENTIFIC%20ERA&display=swap">
+<link rel="stylesheet" href="tokens.css">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="preload" as="image" href="fotos/m/taza-biotech.jpg" fetchpriority="high">
+</head>
+<body>
+<a class="saltar" href="#catalogo" id="saltar">Saltar al contenido</a>
+
+<!-- ===================== ENCABEZADO ===================== -->
+<header class="header" id="header">
+  <div class="contenedor header__in">
+    <a class="header__marca" href="#inicio" aria-label="Biotech Supplies, ir al inicio">
+      <img src="assets/logo-tinta.svg" alt="" width="48" height="48">
+      <span class="header__nombre" aria-hidden="true"><b>BIOTECH</b><i>SUPPLIES</i></span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <ul>
+        <li><a href="#catalogo" data-sec="catalogo">Catálogo</a></li>
+        <li><a href="#tazas-magicas" data-sec="tazas-magicas">Tazas mágicas</a></li>
+        <li><a href="#personalizados" data-sec="personalizados">Personalizados</a></li>
+        <li><a href="#como-comprar" data-sec="como-comprar">Cómo comprar</a></li>
+        <li><a href="#envios-y-pagos" data-sec="envios-y-pagos">Envíos y pagos</a></li>
+        <li><a href="#cientificos" data-sec="cientificos">Científicos</a></li>
+        <li><a href="#contacto" data-sec="contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="header__acciones">
+      <button type="button" class="pedido-btn" id="btn-pedido" aria-haspopup="dialog" aria-label="Abrir Mi pedido, vacío">
+        <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-pedido"/></svg>
+        <span class="pedido-btn__txt" aria-hidden="true">Mi pedido</span>
+        <span class="contador" id="contador" aria-hidden="true">0</span>
+      </button>
+      <button type="button" class="menu-btn" id="btn-menu" aria-expanded="false" aria-controls="menu" aria-label="Menú">
+        <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-menu"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menú del celular (y de la tablet) -->
+<div class="menu sobre-tinta" id="menu" role="dialog" aria-modal="true" aria-label="Menú" hidden>
+  <nav aria-label="Menú">
+    <ul class="menu__lista">
+      <li style="--i:0"><a href="#catalogo">Catálogo</a></li>
+      <li style="--i:1"><a href="#tazas-magicas">Tazas mágicas</a></li>
+      <li style="--i:2"><a href="#personalizados">Personalizados</a></li>
+      <li style="--i:3"><a href="#como-comprar">Cómo comprar</a></li>
+      <li style="--i:4"><a href="#envios-y-pagos">Envíos y pagos</a></li>
+      <li style="--i:5"><a href="#cientificos">Científicos</a></li>
+      <li style="--i:6"><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+  <a class="menu__ig" href="https://www.instagram.com/biotech_supplies/" data-ig-perfil target="_blank" rel="noopener" aria-label="Instagram de Biotech Supplies, se abre en otra pestaña">
+    <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-instagram"/></svg>
+    <span data-ig-usuario>@biotech_supplies</span>
+  </a>
+</div>
+
+<main id="main">
+
+<!-- ===================== PORTADA ===================== -->
+<section class="portada cuaderno" id="inicio" aria-labelledby="t-portada">
+  <div class="contenedor portada__in">
+    <p class="eyebrow t-micro portada__eyebrow">Regalos y accesorios científicos · Montevideo</p>
+
+    <h1 class="t-display portada__titulo" id="t-portada">
+      <span class="linea">
+        <span class="palabra" style="--w:0">Por</span>
+        <span class="palabra" style="--w:1">científicos<span class="sr-only">,</span></span>
+      </span>
+      <span class="linea">
+        <span class="palabra" style="--w:2"><span class="marcador" style="--marcador-delay:700ms">para</span></span>
+        <span class="palabra" style="--w:3">científicos</span>
+      </span>
+    </h1>
+
+    <div class="portada__texto">
+      <p class="t-lead portada__bajada">Tazas mágicas, bitácoras, canguros y otros regalos para quienes viven entre pipetas, fórmulas, código y bichos.</p>
+      <div class="portada__botones">
+        <a class="btn btn--primario btn--grande" href="#catalogo">Ver el catálogo
+          <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-abajo"/></svg></a>
+        <a class="btn btn--amarillo btn--grande" href="https://ig.me/m/biotech_supplies" target="_blank" rel="noopener" data-consulta="general">Pedir por Instagram
+          <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-flecha-ne"/></svg></a>
+      </div>
+      <p class="portada__micro t-small">Envíos a todo el país 🧪</p>
+      <p class="nota t-mano portada__deslizar" aria-hidden="true"><span class="nota__txt">deslizá</span><span class="flecha" data-flecha="giro"></span></p>
+    </div>
+
+    <div class="collage" id="collage">
+      <a class="muestra muestra--bit" href="#bitacora" style="--r:2.5deg; --d:550ms" data-hero="bitacora">
+        <img src="fotos/m/bitacoras.jpg" width="720" height="900" alt="Cuatro bitácoras de laboratorio con espiral y tapas ilustradas con laboratorios: Proteínas, Biología celular, Microbiología y Química." style="object-position:50% 50%">
+        <span class="cinta cinta--pegada" style="--cr:6deg"></span>
+      </a>
+      <a class="muestra muestra--tote" href="#tote" style="--r:-1.5deg; --d:700ms" data-hero="tote">
+        <img src="fotos/m/tote.jpg" width="720" height="1280" alt="Tote bag negra colgada de una percha de madera sobre una pared clara, con la frase «In my scientific era» en letras blancas de burbuja." style="object-position:50% 70%">
+        <span class="cinta cinta--pegada" style="--cr:-8deg"></span>
+      </a>
+      <a class="muestra muestra--taza" href="#taza-biotech" style="--r:-4deg; --d:400ms" data-hero="taza-biotech">
+        <img src="fotos/m/taza-biotech.jpg" width="720" height="1280" alt="Mano sosteniendo la Taza Biotecnológica: vidrio transparente con dibujos de doble hélice de ADN, mitocondrias, bacteriófago, matraces y el logo BIO TECH, con hojas de monstera de fondo." style="object-position:50% 12%" fetchpriority="high">
+        <span class="cinta cinta--pegada" style="--cr:-8deg"></span>
+      </a>
+      <a class="muestra muestra--cang" href="#canguro" style="--r:3deg; --d:850ms" data-hero="canguro">
+        <img src="fotos/m/canguros-colores.jpg" width="720" height="900" alt="Dibujo de dos canguros oversize: uno chocolate y otro negro con «In my scientific era»." loading="lazy">
+        <span class="cinta cinta--pegada" style="--cr:5deg"></span>
+      </a>
+
+      <p class="nota nota--favorita t-mano" aria-hidden="true"><span class="nota__txt">La favorita</span><span class="flecha" data-flecha="lazo"></span></p>
+      <p class="nota nota--tote t-mano" aria-hidden="true"><span class="nota__txt">Con el canguro, la tote va de regalo</span><span class="flecha" data-flecha="curva"></span></p>
+    </div>
+
+    <!-- garabatos fijos (decoración) -->
+    <img class="garabato garabato--atomo" src="assets/dibujos/garabato-atomo.svg" alt="" aria-hidden="true" width="88" height="88">
+    <img class="garabato garabato--matraz" src="assets/dibujos/garabato-matraz.svg" alt="" aria-hidden="true" width="72" height="72">
+    <img class="garabato garabato--benceno" src="assets/dibujos/garabato-benceno.svg" alt="" aria-hidden="true" width="80" height="80">
+    <img class="garabato garabato--planeta" src="assets/dibujos/garabato-planeta.svg" alt="" aria-hidden="true" width="76" height="76">
+    <img class="garabato garabato--destello" src="assets/dibujos/destellos.svg" alt="" aria-hidden="true" width="64" height="64">
+  </div>
+</section>
+
+<!-- ===================== MARQUESINA ===================== -->
+<div class="marquesina">
+  <button type="button" class="marquesina__pausa" id="marquesina-pausa" aria-label="Pausar el movimiento de la cinta">
+    <svg class="ico ico--pausa" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>
+    <svg class="ico ico--play" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5l11 7-11 7z"/></svg>
+  </button>
+  <div class="marquesina__pista" aria-hidden="true">
+    <ul class="marquesina__grupo">
+      <li>Tazas mágicas</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Bitácoras</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Canguros</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Totes</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Cartucheras</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Accesorios</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Envíos a todo el país</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+    </ul>
+    <ul class="marquesina__grupo" data-copia>
+      <li>Tazas mágicas</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Bitácoras</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Canguros</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Totes</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Cartucheras</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Accesorios</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+      <li>Envíos a todo el país</li><li><img src="assets/dibujos/destello-relleno.svg" alt="" width="24" height="24"></li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===================== CATÁLOGO ===================== -->
+<section class="seccion catalogo" id="catalogo" aria-labelledby="t-catalogo">
+  <div class="contenedor">
+    <header class="cabecera">
+      <p class="eyebrow t-micro reveal" style="--i:0">N.º 01 · Catálogo</p>
+      <h2 class="t-h1 reveal" id="t-catalogo" style="--i:1">Catálogo</h2>
+      <p class="t-lead reveal" style="--i:2">Elegí lo que te guste, sumalo a Mi pedido y pedilo por Instagram. Todavía no mostramos precios: los charlamos por mensaje.</p>
+    </header>
+  </div>
+
+  <div class="filtros cuaderno cuaderno--papel2" id="filtros">
+    <div class="contenedor filtros__in">
+      <div class="chips" id="chips" role="group" aria-label="Filtrar por categoría"></div>
+      <div class="buscador">
+        <label class="sr-only" for="buscar">Buscar en el catálogo</label>
+        <svg class="ico buscador__lupa" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-buscar"/></svg>
+        <input class="buscador__campo" id="buscar" type="search" inputmode="search" autocomplete="off" spellcheck="false" placeholder="Buscá una taza, una ciencia…" enterkeyhint="search">
+        <button type="button" class="buscador__borrar" id="buscar-borrar" aria-label="Borrar búsqueda" hidden>
+          <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-cerrar"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="contenedor" role="region" aria-label="Catálogo de productos">
+    <div class="catalogo__meta">
+      <p class="t-lead catalogo__resumen" id="resumen-cat">&nbsp;</p>
+      <p class="t-small t-apoyo catalogo__cuenta" id="cuenta" aria-live="polite" role="status"></p>
+    </div>
+
+    <div id="aviso-catalogo"></div>
+
+    <ul class="grilla-productos" id="grilla" aria-label="Lista de productos">
+      <li class="esqueleto" aria-hidden="true"><i></i><b></b><b></b></li>
+      <li class="esqueleto" aria-hidden="true"><i></i><b></b><b></b></li>
+      <li class="esqueleto" aria-hidden="true"><i></i><b></b><b></b></li>
+      <li class="esqueleto" aria-hidden="true"><i></i><b></b><b></b></li>
+      <li class="esqueleto" aria-hidden="true"><i></i><b></b><b></b></li>
+      <li class="esqueleto" aria-hidden="true"><i></i><b></b><b></b></li>
+      <li class="esqueleto" aria-hidden="true"><i></i><b></b><b></b></li>
+      <li class="esqueleto" aria-hidden="true"><i></i><b></b><b></b></li>
+    </ul>
+
+    <div class="vacio" id="vacio" hidden>
+      <img src="assets/dibujos/garabato-matraz.svg" alt="" aria-hidden="true" width="96" height="96">
+      <p class="nota t-mano" aria-hidden="true">Ups, nada con ese nombre</p>
+      <h3 class="t-h3">No encontramos nada con eso</h3>
+      <p>Probá con otra palabra o mirá todo el catálogo. Si buscabas algo en particular, escribinos por Instagram y lo charlamos.</p>
+      <div class="vacio__botones">
+        <button type="button" class="btn" id="vacio-todo">Ver todo el catálogo</button>
+        <a class="btn btn--amarillo" href="https://ig.me/m/biotech_supplies" target="_blank" rel="noopener" data-consulta="general">Escribir por Instagram</a>
+      </div>
+    </div>
+
+    <div class="no-encontras" id="no-encontras" hidden>
+      <p class="nota t-mano" aria-hidden="true"><span class="nota__txt">¿No encontrás lo que buscás? Escribinos</span><span class="flecha" data-flecha="s"></span></p>
+      <a class="btn btn--amarillo" href="https://ig.me/m/biotech_supplies" target="_blank" rel="noopener" data-consulta="general">Pedir por Instagram
+        <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-flecha-ne"/></svg></a>
+    </div>
+
+    <noscript>
+      <p class="noscript">Para ver el catálogo necesitás activar JavaScript. Mientras tanto, escribinos por Instagram: @biotech_supplies.
+        <a class="btn btn--amarillo" href="https://ig.me/m/biotech_supplies">Escribir por Instagram</a></p>
+    </noscript>
+  </div>
+</section>
+
+<!-- ===================== TAZAS MÁGICAS (momento «wow») ===================== -->
+<section class="tazas cuaderno cuaderno--tinta sobre-tinta" id="tazas-magicas" aria-labelledby="t-tazas">
+  <div class="tazas__pista" id="tazas-pista">
+    <div class="escenario" id="escenario">
+      <div class="contenedor escenario__in">
+        <div class="escenario__texto">
+          <p class="eyebrow t-micro reveal" style="--i:0">N.º 02 · ¿Sabías que…?</p>
+          <h2 class="t-h1 reveal" id="t-tazas" style="--i:1">Nuestras tazas <span class="sr-only">son mágicas</span></h2>
+          <p class="t-pincel tazas__pincel reveal" style="--i:2" aria-hidden="true"><span>son mágicas!</span></p>
+          <p class="t-lead reveal" style="--i:3">Son de vidrio transparente y vienen con ilustraciones científicas. Con café negro, los dibujos se esconden. Cuando le agregás leche, aparecen todos los detalles.</p>
+          <p class="nota nota--leche t-mano" aria-hidden="true"><span class="nota__txt">Agregá leche</span><span class="flecha" data-flecha="curva"></span></p>
+        </div>
+
+        <div class="escenario__taza">
+          <div class="taza" id="taza" aria-live="off"></div>
+          <div class="leyenda" aria-live="polite">
+            <p class="leyenda__a t-small">Con café negro, los dibujos se esconden…</p>
+            <p class="leyenda__b t-small">…y con leche aparecen todos los detalles. 🧪</p>
+          </div>
+          <button type="button" class="btn btn--amarillo btn--grande leche-btn" id="leche-btn" aria-pressed="false" aria-label="Mostrar la taza con café negro o con leche">
+            <span class="leche-btn__a">Agregar leche</span><span class="leche-btn__b">Volver al café negro</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contenedor tazas__cierre">
+    <p class="t-small t-apoyo tazas__lista">Una taza para cada ciencia: biotecnología, química, orgánica, medicina, programación, física, matemática, cósmica, microbiología, veterinaria, jurásica y oceánica.</p>
+    <button type="button" class="btn btn--amarillo btn--grande" data-filtro="tazas">Ver todas las tazas
+      <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-flecha"/></svg></button>
+  </div>
+</section>
+
+<!-- ===================== PERSONALIZADOS ===================== -->
+<section class="seccion personalizados cuaderno cuaderno--amarillo sobre-amarillo" id="personalizados" aria-labelledby="t-personalizados">
+  <div class="contenedor personalizados__in">
+    <div class="personalizados__texto">
+      <header class="cabecera">
+        <p class="eyebrow t-micro reveal" style="--i:0">N.º 03 · Hechas a tu medida</p>
+        <h2 class="t-h1 reveal" id="t-personalizados" style="--i:1">Personalizamos las tazas como <span class="marcador">vos quieras</span>!!</h2>
+      </header>
+      <p class="t-lead reveal" style="--i:2">Diseñamos tu taza juntos. Ideal para regalar o para darte un gustito científico.</p>
+      <ul class="ideas">
+        <li class="reveal" style="--i:3"><img src="assets/dibujos/garabato-benceno.svg" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"><span>Tu proteína favorita</span></li>
+        <li class="reveal" style="--i:4"><img src="assets/dibujos/destello.svg" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"><span>Un chiste de laboratorio</span></li>
+        <li class="reveal" style="--i:5"><img src="assets/dibujos/garabato-atomo.svg" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"><span>El logo de tu grupo de investigación</span></li>
+        <li class="reveal" style="--i:6"><img src="assets/dibujos/garabato-formulas.svg" alt="" aria-hidden="true" width="44" height="44" loading="lazy" decoding="async"><span>Esa frase que te motiva cada mañana</span></li>
+      </ul>
+      <p class="personalizados__como reveal" style="--i:7">Contanos tu idea por mensaje de Instagram y la charlamos. Si tenés tus moléculas favoritas, las ponemos en tu taza.</p>
+      <div class="reveal" style="--i:8">
+        <button type="button" class="btn btn--primario btn--grande" id="btn-personalizada">Quiero mi taza personalizada
+          <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-flecha-ne"/></svg></button>
+      </div>
+    </div>
+
+    <div class="personalizados__foto reveal" style="--i:2">
+      <figure class="polaroid">
+        <img src="fotos/personalizados-recorte.jpg" width="1080" height="720" loading="lazy" alt="Dos tablets que muestran diseños de ejemplo para tazas: una con dibujos de ropa y costura y otra con moléculas dibujadas a mano, y un lápiz digital.">
+        <span class="cinta cinta--tinta cinta--pegada" aria-hidden="true"></span>
+      </figure>
+      <img class="garabato garabato--d1" src="assets/dibujos/destellos.svg" alt="" aria-hidden="true" width="64" height="64" loading="lazy" decoding="async">
+      <img class="garabato garabato--d2" src="assets/dibujos/destello.svg" alt="" aria-hidden="true" width="48" height="48" loading="lazy" decoding="async">
+      <p class="nota nota--disenamos t-mano" aria-hidden="true"><span class="nota__txt">Diseñamos tu taza juntos</span><span class="flecha" data-flecha="lazo"></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CÓMO COMPRAR ===================== -->
+<section class="seccion como cuaderno" id="como-comprar" aria-labelledby="t-como">
+  <div class="contenedor">
+    <header class="cabecera">
+      <p class="eyebrow t-micro reveal" style="--i:0">N.º 04 · Cómo comprar</p>
+      <h2 class="t-h1 reveal" id="t-como" style="--i:1">Cuatro pasos y listo</h2>
+      <p class="t-lead reveal" style="--i:2">Esta web es nuestro catálogo: no se cobra acá. Los pedidos se arman por mensaje de Instagram.</p>
+    </header>
+
+    <ol class="pasos">
+      <li class="paso reveal" style="--i:0; --r:-1deg">
+        <div class="paso__cab"><span class="paso__num" aria-hidden="true">1</span>
+          <svg class="ico paso__ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-buscar"/></svg></div>
+        <h3 class="t-h3">Elegí</h3>
+        <p>Mirá el catálogo y sumá lo que te guste a Mi pedido.</p>
+      </li>
+      <li class="paso__flecha" aria-hidden="true"><span class="flecha" data-flecha="corta"></span></li>
+      <li class="paso reveal" style="--i:1; --r:.8deg">
+        <div class="paso__cab"><span class="paso__num" aria-hidden="true">2</span>
+          <svg class="ico paso__ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-mensaje"/></svg></div>
+        <h3 class="t-h3">Escribinos</h3>
+        <p>Con un toque copiás el mensaje listo y se abre el chat de Instagram. Lo pegás y lo mandás.</p>
+      </li>
+      <li class="paso__flecha" aria-hidden="true"><span class="flecha" data-flecha="corta"></span></li>
+      <li class="paso reveal" style="--i:2; --r:-.6deg">
+        <div class="paso__cab"><span class="paso__num" aria-hidden="true">3</span>
+          <svg class="ico paso__ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-banco"/></svg></div>
+        <h3 class="t-h3">Pagá</h3>
+        <p id="paso-pago">Los medios de pago los charlamos por mensaje.</p>
+      </li>
+      <li class="paso__flecha" aria-hidden="true"><span class="flecha" data-flecha="corta"></span></li>
+      <li class="paso reveal" style="--i:3; --r:1deg">
+        <div class="paso__cab"><span class="paso__num" aria-hidden="true">4</span>
+          <svg class="ico paso__ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-camion"/></svg></div>
+        <h3 class="t-h3">Recibilo</h3>
+        <p id="paso-envio">Coordinamos el envío por mensaje.</p>
+      </li>
+    </ol>
+
+    <div class="como__acciones reveal">
+      <a class="btn btn--amarillo btn--grande" href="#catalogo">Armar mi pedido
+        <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-flecha"/></svg></a>
+      <a class="btn btn--grande" href="https://ig.me/m/biotech_supplies" target="_blank" rel="noopener" data-consulta="general">Pedir por Instagram
+        <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-flecha-ne"/></svg></a>
+    </div>
+    <p class="t-small t-apoyo como__nota">Instagram no deja precargar mensajes: por eso la web lo copia por vos y vos lo pegás. 🫶🏼</p>
+  </div>
+</section>
+
+<!-- ===================== ENVÍOS Y PAGOS ===================== -->
+<section class="seccion envios" id="envios-y-pagos" aria-labelledby="t-envios">
+  <div class="contenedor">
+    <header class="cabecera">
+      <p class="eyebrow t-micro reveal" style="--i:0">N.º 05 · Envíos y pagos</p>
+      <h2 class="t-h1 reveal" id="t-envios" style="--i:1">Llegamos a todo el país</h2>
+      <p class="t-lead reveal" style="--i:2" id="envios-lead">Envíos propios y súper puntuales.</p>
+    </header>
+
+    <div class="paneles">
+      <article class="panel reveal" style="--i:0" aria-labelledby="t-env">
+        <div class="panel__cab">
+          <span class="panel__ico" aria-hidden="true"><svg class="ico"><use href="assets/iconos/sprite.svg#i-ui-camion"/></svg></span>
+          <h3 class="t-h3" id="t-env">Envíos</h3>
+        </div>
+        <!-- La lista sale de productos.json → envios_y_pagos.envios (catalogo.js, armarEnviosPagos). Este texto es solo de reserva. -->
+        <ul class="panel__lista" id="envios-lista">
+          <li><span>Escribinos por Instagram y te contamos cómo enviamos.</span></li>
+        </ul>
+        <p class="nota t-mano panel__nota" aria-hidden="true">Zona verde de Montevideo</p>
+        <p class="t-small t-apoyo">¿Dudás si tu barrio entra en la zona verde? Escribinos y te lo confirmamos.</p>
+      </article>
+
+      <article class="panel reveal" style="--i:1" aria-labelledby="t-pag">
+        <div class="panel__cab">
+          <span class="panel__ico" aria-hidden="true"><svg class="ico"><use href="assets/iconos/sprite.svg#i-ui-banco"/></svg></span>
+          <h3 class="t-h3" id="t-pag">Pagos</h3>
+        </div>
+        <!-- La lista sale de productos.json → envios_y_pagos.pagos (catalogo.js, armarEnviosPagos). Este texto es solo de reserva. -->
+        <ul class="panel__lista" id="pagos-lista">
+          <li><span>Escribinos por Instagram y te contamos cómo se paga.</span></li>
+        </ul>
+        <p class="t-small t-apoyo">Los precios los pasamos por mensaje cuando elegís tu pedido.</p>
+        <!-- Promo a confirmar con Lucía: «En compras mayores a $600, la Taza Mundialista va de regalo.» No mostrar como vigente. -->
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CIENTÍFICOS ===================== -->
+<section class="seccion cientificos cuaderno cuaderno--papel2" id="cientificos" aria-labelledby="t-cientificos">
+  <div class="contenedor">
+    <header class="cabecera cabecera--flecha">
+      <p class="eyebrow t-micro reveal" style="--i:0">N.º 06 · La serie</p>
+      <h2 class="t-h1 reveal" id="t-cientificos" style="--i:1">Nuestra serie de científicos</h2>
+      <p class="t-lead reveal" style="--i:2">Cada tanto te presentamos a alguien que cambió la forma de ver el mundo. Varias y varios viven en nuestras cartucheras.</p>
+      <p class="nota t-mano cientificos__deslizar" aria-hidden="true"><span class="nota__txt">deslizá</span><span class="flecha" data-flecha="corta"></span></p>
+    </header>
+  </div>
+  <div class="cientificos__riel" id="riel" role="region" aria-label="Serie de científicos: se recorre de costado con las flechas del teclado o con los botones">
+    <ul class="cientificos__lista" id="cientificos-lista"></ul>
+  </div>
+  <div class="contenedor">
+    <div class="cientificos__nav" id="cient-nav">
+      <button type="button" class="cientificos__flecha" id="cient-prev" aria-controls="riel" aria-label="Científico anterior"><svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-izquierda"/></svg></button>
+      <div class="puntos" id="puntos-cient" aria-hidden="true"></div>
+      <button type="button" class="cientificos__flecha" id="cient-next" aria-controls="riel" aria-label="Científico siguiente"><svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-derecha"/></svg></button>
+    </div>
+    <div class="cientificos__pie reveal">
+      <button type="button" class="btn btn--grande" data-filtro="cartucheras">Ver las cartucheras
+        <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-flecha"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- Sección «We ♡ U» apagada: no tenemos mensajes de clientes. Para activarla, Lucía tiene que pasar mensajes reales y con permiso de quien los escribió. No inventar testimonios. -->
+<section id="we-love-u" hidden aria-hidden="true"></section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section class="seccion contacto cuaderno" id="contacto" aria-labelledby="t-contacto">
+  <div class="contenedor contacto__in">
+    <img class="garabato garabato--micro" src="assets/dibujos/garabato-microscopio.svg" alt="" aria-hidden="true" width="96" height="96" loading="lazy" decoding="async">
+    <img class="garabato garabato--tubos" src="assets/dibujos/garabato-tubos.svg" alt="" aria-hidden="true" width="96" height="96" loading="lazy" decoding="async">
+    <p class="eyebrow t-micro reveal" style="--i:0">N.º 07 · Contacto</p>
+    <h2 class="t-display reveal" id="t-contacto" style="--i:1"><span class="marcador">Escribinos</span></h2>
+    <p class="t-lead reveal" style="--i:2">Por Instagram atendemos todo: consultas, pedidos, personalizados y envíos.</p>
+    <p class="nota nota--escribi t-mano reveal" style="--i:3" aria-hidden="true"><span class="nota__txt">Ahí, en el botón amarillo</span><span class="flecha" data-flecha="lazo"></span></p>
+    <div class="contacto__botones reveal" style="--i:3">
+      <a class="btn btn--amarillo btn--grande" href="https://ig.me/m/biotech_supplies" target="_blank" rel="noopener" data-consulta="contacto">
+        <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-instagram"/></svg>
+        Escribirnos por mensaje</a>
+      <a class="btn btn--grande" href="https://www.instagram.com/biotech_supplies/" data-ig-perfil target="_blank" rel="noopener">Ver el perfil en Instagram
+        <svg class="ico" aria-hidden="true"><use href="assets/iconos/sprite.svg#i-ui-flecha-ne"/></svg></a>
+    </div>
+    <div class="contacto__usuario reveal" style="--i:4">
+      <span class="contacto__arroba" data-ig-usuario>@biotech_supplies</span>
+      <button type="button" class="btn btn--chico" id="copiar-usuario" aria-label="Copiar @biotech_supplies">
+        <svg class="ico"><use href="assets/iconos/sprite.svg#i-ui-copiar"/></svg><span>Copiar</span>
+      </button>
+    </div>
+    <p class="t-small contacto__lugar reveal" style="--i:5">Montevideo, Uruguay · Envíos a todo el país</p>
+    <p class="t-small t-apoyo contacto__nota reveal" style="--i:5">No usamos formularios ni juntamos tus datos: el pedido lo cerramos charlando por mensaje.</p>
+    <!-- Opcional, a confirmar con Lucía (no se muestra): «Biotech Supplies es una marca independiente de regalos científicos. No tiene relación con Biotech Uruguay (biotech.com.uy).» -->
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== PIE ===================== -->
+<footer class="pie sobre-tinta" id="pie">
+  <div class="contenedor pie__in">
+    <button type="button" class="pie__arriba" id="volver-arriba" aria-label="Volver arriba">
+      <svg class="ico"><use href="assets/iconos/sprite.svg#i-ui-flecha"/></svg>
+    </button>
+    <div class="pie__marca">
+      <img src="assets/logo.svg" alt="Biotech Supplies" width="88" height="88" loading="lazy">
+      <p class="pie__lema">Por científicos, para científicos</p>
+    </div>
+    <nav class="pie__col pie__col--1" aria-label="Catálogo">
+      <h2 class="t-micro">Catálogo</h2>
+      <ul>
+        <li><a href="#catalogo" data-filtro="tazas">Tazas científicas</a></li>
+        <li><a href="#catalogo" data-filtro="bitacoras">Bitácoras</a></li>
+        <li><a href="#catalogo" data-filtro="canguros">Canguros</a></li>
+        <li><a href="#catalogo" data-filtro="totes">Totes</a></li>
+        <li><a href="#catalogo" data-filtro="cartucheras">Cartucheras</a></li>
+        <li><a href="#catalogo" data-filtro="accesorios">Accesorios</a></li>
+      </ul>
+    </nav>
+    <nav class="pie__col pie__col--2" aria-label="Comprar">
+      <h2 class="t-micro">Comprar</h2>
+      <ul>
+        <li><a href="#como-comprar">Cómo comprar</a></li>
+        <li><a href="#envios-y-pagos">Envíos y pagos</a></li>
+        <li><a href="#cientificos">Científicos</a></li>
+        <li><a href="#personalizados">Personalizados</a></li>
+      </ul>
+    </nav>
+    <div class="pie__col pie__col--3">
+      <h2 class="t-micro">Contacto</h2>
+      <ul>
+        <li><a href="https://www.instagram.com/biotech_supplies/" data-ig-perfil target="_blank" rel="noopener" aria-label="Instagram de Biotech Supplies, se abre en otra pestaña"><svg class="ico"><use href="assets/iconos/sprite.svg#i-ui-instagram"/></svg><span data-ig-usuario>@biotech_supplies</span></a></li>
+        <li><span><svg class="ico"><use href="assets/iconos/sprite.svg#i-ui-lugar"/></svg>Montevideo, Uruguay</span></li>
+        <li><span><svg class="ico"><use href="assets/iconos/sprite.svg#i-ui-camion"/></svg>Envíos a todo el país</span></li>
+      </ul>
+    </div>
+    <p class="pie__nota t-small">Esta web es un catálogo: no se cobra ni se guardan datos de clientes.</p>
+  </div>
+  <div class="pie__gigante" aria-hidden="true">BIOTECH</div>
+  <div class="pie__creditos">
+    <div class="contenedor">
+      <p class="t-small">© 2026 Biotech Supplies · Fotos y diseños © Biotech Supplies · Montevideo, Uruguay</p>
+      <p class="t-mano pie__humor">Hecho con ☕ y mucha ciencia.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== CAPAS (ficha, Mi pedido, aviso) ===================== -->
+<div class="capa capa--ficha" id="capa-ficha" hidden>
+  <div class="telon" data-cerrar="ficha"></div>
+  <div class="ficha" id="ficha" role="dialog" aria-modal="true" aria-labelledby="ficha-nombre" tabindex="-1">
+    <button type="button" class="ficha__cerrar" id="ficha-cerrar" aria-label="Cerrar ficha">
+      <svg class="ico"><use href="assets/iconos/sprite.svg#i-ui-cerrar"/></svg>
+    </button>
+    <div class="ficha__contenido" id="ficha-contenido"></div>
+  </div>
+</div>
+
+<div class="capa capa--pedido" id="capa-pedido" hidden>
+  <div class="telon" data-cerrar="pedido"></div>
+  <aside class="pedido" id="pedido" role="dialog" aria-modal="true" aria-labelledby="pedido-titulo" tabindex="-1">
+    <span class="pedido__manija" aria-hidden="true"></span>
+    <div class="pedido__cab">
+      <div>
+        <h2 class="t-h2" id="pedido-titulo">Mi pedido</h2>
+        <p class="t-small t-apoyo" id="pedido-sub">0 productos</p>
+      </div>
+      <button type="button" class="pedido__cerrar" id="pedido-cerrar" aria-label="Cerrar Mi pedido">
+        <svg class="ico"><use href="assets/iconos/sprite.svg#i-ui-cerrar"/></svg>
+      </button>
+    </div>
+    <div class="pedido__cuerpo" id="pedido-cuerpo"></div>
+    <div class="pedido__pie" id="pedido-pie"></div>
+  </aside>
+</div>
+
+<div class="avisos" id="avisos" role="status" aria-live="polite" aria-atomic="true"></div>
+
+<noscript>
+  <p class="noscript noscript--fijo">Para ver el catálogo necesitás activar JavaScript. Mientras tanto, escribinos por Instagram: @biotech_supplies.
+    <a href="https://ig.me/m/biotech_supplies">Escribir por Instagram</a></p>
+</noscript>
+
+<script src="js/util.js" defer></script>
+<script src="js/efectos.js" defer></script>
+<script src="js/pedido.js" defer></script>
+<script src="js/catalogo.js" defer></script>
+</body>
+</html>
